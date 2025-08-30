@@ -2,35 +2,60 @@
   margin: 0;
 }
 
+body {
+  background-color: black;
+  height: 100vh;
+}
+
 
 .bola {
-  width: 25px;
-  height: 25px;
-  transition: 2s ease-in-out;
+  width: 60px;
+  height: 64px;
+  transition: filter 0.5s ease-in-out;
+  margin: 0px;
+  transition: margin 2s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  font-size: 10px;
-  justify-self: center;
-  align-self: center;
+  font-family: sans-serif;
+
   border-radius: 100%;
+  /* animation: zooominout 10s infinite ease-in-out; */
 }
 
 .bola:hover {
-  width: 30px;
-  height: 30px;
-  transform: rotate(90deg);
-  filter: blur(30px);
-  transition: 0s ease-in-out;
+  /* width: 16px;
+  height: 30px; */
+  filter: blur(2px);
+  /* margin: 50px; */
+  transition: margin 2s ease-in-out;
+}
+
+@keyframes zooominout {
+  0% {
+    margin: 0px;
+    transform: scale(1);
+  }
+
+  50% {
+    margin: 1000px;
+    transform: scale(1.5);
+  }
+
+  100% {
+    margin: 0px;
+    transform: scale(1);
+  }
 }
 
 #bolas-container {
   display: grid;
-  padding: 20px;
-  width: 100%;
-  max-width: 800px;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  margin-inline: auto; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  gap: 0;
 }

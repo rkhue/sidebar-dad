@@ -7,27 +7,54 @@ function getRandomPastelColor() {
 }
 
 const RADIUS = 25
+const grid = document.getElementById("bolas-container");
 
-function insertGrid(N = 4) {
-  const existing = document.getElementById("bolas-container");
-  if (existing) existing.remove();
+let ball_count = 0;
 
-  const grid = document.createElement("div");
+
+function insertball() {
+  ball_count++;
+
   grid.id = "bolas-container";
-  grid.style.gridTemplateColumns = `repeat(${N}, 1fr)`;
+  grid.style.gridTemplateColumns = `repeat(${Math.floor(Math.sqrt(ball_count))}, auto`;
+  grid.style.gridTemplateRows = `repeat(${Math.floor(Math.sqrt(ball_count))}, auto)`
 
-  for (let i = 0; i < N * N; i++) {
-    const item = document.createElement("div");
-    item.className = "bola grid-item";
-    item.style.backgroundColor = getRandomPastelColor();
+  const item = document.createElement("div");
+  item.className = "bola grid-item";
+  item.style.backgroundColor = getRandomPastelColor();
+  grid.appendChild(item);
 
-    item.addEventListener("click", () => insertGrid(N));
-
-    grid.appendChild(item);
-  }
 
   document.body.appendChild(grid);
 }
 
 // Initial grid
-insertGrid(16);
+for (let index = 0; index < 144; index++) {
+  insertball();
+ 
+}
+
+const INFLUENCE_RADIUS = 300;
+const MAX_MARGIN = 150;
+document.addEventListener("mousemove", (e) => {
+  const balls = document.querySelectorAll('.bola');
+
+  balls.forEach(ball => {
+    const rect = ball.getBoundingClientRect();
+    const center_x = rect.left + rect.width / 2;
+    const center_y = rect.top + rect.height / 2;
+
+    // get distance
+    const dx = e.clientX - center_x;
+    const dy = e.clientY - center_y;
+  
+    const dist = Math.sqrt(dx * dx + dy * dy);
+    let margin = 0;
+    margin = Math.min(MAX_MARGIN, MAX_MARGIN * (INFLUENCE_RADIUS / dist));
+
+
+    ball.style.margin = `${margin}px`
+    // ball.innerHTML = `${Math.floor(margin)}px`
+  })
+})
+
