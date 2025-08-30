@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+}
+
+
+.bola {
+  width: 25px;
+  height: 25px;
+  transition: 2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 10px;
+  justify-self: center;
+  align-self: center;
+  border-radius: 100%;
+}
+
+.bola:hover {
+  width: 30px;
+  height: 30px;
+  transform: rotate(90deg);
+  filter: blur(30px);
+  transition: 0s ease-in-out;
+}
+
+#bolas-container {
+  display: grid;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
