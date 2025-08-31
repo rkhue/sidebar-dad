@@ -13,7 +13,7 @@ body {
   height: 64px;
   transition: filter 0.5s ease-in-out;
   margin: 0px;
-  transition: margin 2s ease-in-out;
+  transition: margin .002s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +29,7 @@ body {
   height: 30px; */
   filter: blur(2px);
   /* margin: 50px; */
-  transition: margin 2s ease-in-out;
+  /* transition: margin .2s ease-in-out; */
 }
 
 @keyframes zooominout {

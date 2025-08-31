@@ -29,7 +29,7 @@ function insertball() {
 }
 
 // Initial grid
-for (let index = 0; index < 144; index++) {
+for (let index = 0; index < 36; index++) {
   insertball();
  
 }
