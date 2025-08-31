@@ -23,7 +23,8 @@ body {
     border-radius: 50%;
     position: absolute;
     pointer-events: none;
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4) 70%);
     filter: blur(20px);
     mix-blend-mode: screen;
+    transition: opacity 0.1s linear; 
 }
