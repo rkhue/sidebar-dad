@@ -257,3 +257,10 @@ Sidebar
     width: 400px;
   }
 }
+
+iframe {
+  flex: 1;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
