@@ -29,13 +29,14 @@ function insertball() {
 }
 
 // Initial grid
-for (let index = 0; index < 36; index++) {
+for (let index = 0; index < 25; index++) {
   insertball();
  
 }
 
-const INFLUENCE_RADIUS = 300;
-const MAX_MARGIN = 150;
+const INFLUENCE_RADIUS = 150;
+const MAX_MARGIN = 75;
+
 document.addEventListener("mousemove", (e) => {
   const balls = document.querySelectorAll('.bola');
 
