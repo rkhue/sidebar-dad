@@ -57,3 +57,12 @@ ul {
     font-size: large;
     background-color: rgba(73, 23, 255, 0.226);
 }
+
+iframe {
+  position: absolute;
+  left: 35%;  /* leaves space for your sidebar */
+  top: 0;
+  width: 65%;
+  height: 100%;
+  border: none;
+}
