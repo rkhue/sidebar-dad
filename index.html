@@ -14,42 +14,45 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <div class="header">
-      <div class="header-contents">
-        <button class="toggle-button">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
-        <p>Sitesfatório</p>
-      </div>
+<div class="header">
+    <div class="header-contents">
+      <button class="toggle-button">
+        <!-- menu icon -->
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <p>Sitesfatório</p>
     </div>
+  </div>
 
-    <div class="overlay"></div>
+  <div class="overlay"></div>
 
-    <div class="sidebar show-sidebar">
-      <div class="sidebar-top">
-        <p>Satisfatório</p>
-      </div>
-      <div class="sidebar-items">
-        <ul>
-          <a class="nav-item" href="#" data-page="home">Home</a>
-          <a class="nav-item" href="#" data-page="about">About</a>
-          <a class="nav-item" href="./pages/bolinhas.html" target="content-frame">Bolinhas</a>
-          <a class="nav-item" href="./pages/lanternas.html" target="content-frame">Lanternas</a>
-        </ul>
-      </div>
+  <div class="sidebar">
+    <div class="sidebar-top">
+      <p>Satisfatório</p>
     </div>
-    <iframe name="content-frame"></iframe>
+    <div class="sidebar-items">
+      <ul>
+        <a class="nav-item" href="#" data-page="home">Home</a>
+        <a class="nav-item" href="#" data-page="about">About</a>
+        <a class="nav-item" href="./pages/bolinhas.html" target="content-frame">Bolinhas</a>
+        <a class="nav-item" href="./pages/lanternas.html" target="content-frame">Lanternas</a>
+      </ul>
+    </div>
+  </div>
+    <div class="content-area">
+      <iframe name="content-frame"></iframe>
+    </div>
     <!-- javascript -->
     <script src="./js/app.js"></script>
   </body>
