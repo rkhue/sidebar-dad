@@ -6,6 +6,9 @@ const MIN_LIGHT_RADII = 100;
 
 const MAX_NOISE_SHIFT = 2;
 
+const diff = 10;
+
+
 
 function getLightTone(strength) {
     return `rgba(255, 255, 255, ${strength})`;
@@ -94,7 +97,6 @@ class Lantern {
 }
 
 const lanterns = [];
-const diff = 10;
 for (let index = 0; index < diff; index++) {
     lanterns.push(new Lantern(index));
 }

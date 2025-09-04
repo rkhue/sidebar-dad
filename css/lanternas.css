@@ -19,7 +19,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.light-hue  {
+.light-hue {
     border-radius: 50%;
     position: absolute;
     pointer-events: none;
