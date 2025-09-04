@@ -81,10 +81,12 @@ iframe {
   background-color: rgb(249, 246, 246);
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
   z-index: 999;
+  transition: ease-in-out 0.2s;
 }
 
 .show-sidebar {
   transform: translateX(0);
+  transition: ease-in-out 0.2s;
 }
 
 .sidebar-top {
