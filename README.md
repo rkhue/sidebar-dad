@@ -1,4 +1,4 @@
-# Projeto Sidebar
+# Sidebar Sitesfatório
 
 Nesse projeto utilizaremos HTML, CSS e JavaScript puro para fazer uma sidebar.
 
