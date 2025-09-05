@@ -35,7 +35,8 @@ Estão disponíveis no site **duas** animações principais
 2. **Lanternas** 🔦
     - Utiliza do CSS para criar auras de luz com luminosidade variada e com blur
     - Espalha N lanternas aleatóriamente na página
-    - Com base na distância do mouse, ele usa o 
+    - Com base na distância do mouse, as lanternas aumentam ou idminuem de luminosidade e intensidade
+    - Cada aura de luz tem um movimento próprio seguindo um `offset` aleatório
 
 ### Deploy 📤
 Utilizamos o **GitHub Actions** para subir a página no GitHub Pages.
